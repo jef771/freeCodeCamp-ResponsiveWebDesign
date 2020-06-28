@@ -1,94 +1,77 @@
 <!DOCTYPE html>
 <html lang = "pt-br">
   <head>
-    <title>Technical Documentation Page</title>
-    <meta charset = "utf-8"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"
+    <title>Personal Portfolio</title>
+    <meta charset = "utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="navcontainer">
-    <nav id="navbar">
-      <ul class="list-style">
-        <header class="title1">Doc. Programa Conjuntos</header>
-        <li><a href="#Introdução" class="nav-link">Introdução</a></li>
-        <li><a href="#Declarando_as_variáveis" class="nav-link">Declarando as variáveis</a></li>
-        <li><a href="#Primeiro_Laço" class="nav-link">Primeiro Laço</a></li>
-        <li><a href="#Definindo_a_Diferença" class="nav-link">Definindo a Diferença</a></li>
-        <li><a href="#Finalizando" class="nav-link">Finalizando</a></li>
+  <div class="container">
+    <div id="navbar"class="containerNav">
+      <nav class="containerNav">
+        <ul>
+          <li class="links"><a href="#contato" class="links2">contato</a></li>
+          <li class="links"><a href="#portfolio" class="links2">portfolio</a></li>
+          <li class="links"><a href="#aboutme" class="links2">sobre mim</a></li>
       </ul>
     </nav>
     </div>
-    <br>
-    <div class="container">
-    <main id="main-doc">
-      <section id="Introdução" class="main-section">
-        <header class="title1">Introdução</header>
-        <p>Este programa foi feito na linguagem Python e foi criado para auxiliar alunos da disciplina matemática discreta.</p>
-        <p>O programa abrange o assunto de conjuntos, união, interseção, diferença e complementar entre dois conjuntos.</p>
-        <p>Os materiais e fontes utilizados para a construção do algoritmo:</p>
-        <ul>
-          <li>Python 3.6;</li>
-          <li>Editor de Texto Atom;</li>
-          <li>Windows PowerShell;</li>
-          <li>Livro: Fundamentos de Matemática Elementar Vol.1 Conjuntos e Funções Gelson Iezzi e Carlos Murakami e</li>
-          <li>Learn Python the Hard Way Zed A. Shaw.</li>
-        </ul>
-      </section>
-      <br>
-      <section id="Declarando_as_variáveis" class="main-section">
-        <header class="title1">Declarando as variáveis</header>
-        <p>Primeiro devemos declarar a variável em formato de lista que irá receber os elementos do conjunto A:</p>
-        <code>a = []</code>
-        <p>E a variável que irá receber o conjunto B:</p>
-        <code>b = []</code>
-        <p>Foi escolhido a variável em formato de lista pois, tratando-se de conjuntos é a melhor para trabalhar.</p>
-      </section>
-      <br>
-      <section id="Primeiro_Laço" class="main-section">
-        <header class="title1">Primeiro Laço</header>
-        <p>Nesse algoritmo iremos utilizar a estrutura de laço para receber quantos elementos o usuário quiser informar.</p>
-        <code>while True:<br>
-          elemento_a = int(input("Digite o(s) elemento(s) do conjunto A, sendo x inteiro e positivo: "))</code>
-        <p>Para finalizar o laço iremos utilizar um comando:</p>
-        <code>if elemento_a == -1:<br>
-          break</code>
-        <p>Dessa forma o laço para, quando o usuário informar inserir o valor "-1."</p>
-        <p>Para salvar cada elemento que o usuário digitar utilizamos uma função de lista o .append(), ele salva uma variável dentro de uma lista.</p>
-        <code>a.append(elemento_a)</code>
-        <p>Para o segundo laço utilizamos o mesmo procedimento, apenas trocando a variável "a" por "b."</p>
-      </section>
-      <br>
-      <section id="Definindo_a_Diferença" class="main-section">
-        <header class="title1">Definindo a Diferença</header>
-        <p>Para o algoritmo operar de forma correta precisamos definir a diferença entre os dois conjuntos:</p>
-        <code>def uniao(a,b):</code>
-        <p>E transformar a lista em set para verificarmos a diferença entre as listas:</p>
-        <code>return(list(set(a) - set(b)))</code>
-        <p>Agora temos a diferença entre A e B (para achar a diferença entre B e A apenas inverta as variáveis e dê um nome nome como "união2") na lista "uniao(a,b)."</p>
-      </section>
-      <br>
-      <section id="Finalizando" class="main-section">
-        <header class="title1">Finalizando</header>
-        <p>Agora criamos novas variáveis para deixar mais fácil a localização e print.</p>
-        <p>Variável z para a união dos conjuntos:</p>
-        <code>Z = (sorted(uniao(a,b)+b))<br>
-          print(f"A U B= {z}.")</code>
-        <p>Y para a diferença entre A e B:</p>
-        <code>y = (uniao(a,b))<br>
-          print(f"A - B= {y}.")</code>
-        <p>X para a diferença entre B e A:</p>
-        <code>x = (uniao2(b,a)))<br>
-          print(f"B - A= {x}.")</code>
-        <p>Para a interseção devemos primeiramente remover os elementos da lista uniao(a,b) da lista a:</p>
-        <code>for i in uniao(a,b):<br>
-        a.remove(i)<br>
-        print(f"A ∩ B= {a}.")</code>
-        <p>Para os complementares:</p>
-        <code>print(f"CBA= {y}.")<br>
-          print(f"CAB= {x}.")</code>
-        <p>Fim da documentação.</p>
-      </section>
-      </main>
+      <div id="welcome-section">
+        <div class="welcomeContainer">
+          <h1>---Olá, me chamo Jeferson Neves---</h1>
+          <p class="ws">---um Front-End em treinamento---</p>
+        </div>
+    </div>
+  </div>
+
+      <div id="aboutme">
+        <h1>#Sobre mim</h1>
+        <div class="resumo">
+          <div class="resumo1">
+            <p>Sou estudante de Banco de Dados pela FATEC sjc<br>
+              venho da aviação porém me apaixonei pela área de TI<br></p>
+            </div>
+          <div class="resumo2">
+            <p>No momento estou estudando HTML e CSS pelo site freeCodeCamp<br>
+                Python pelo livro learn python the hard way de Zed A. Shaw</p>
+          </div>
+        </div>
+        </div>
+
+        <project id="projects" class="portfolio">
+          <h1 id="portfolio">#Portfolio</h1>
+          <div class="project-tile" class="port1">
+              <div class="port2">
+                <figure class="fig1">
+                  <a href="https://jef771.github.io/freeCodeCamp-tribute-page/"><img src="tribute-page.jpg"></a>
+                  <figcaption>Tribute Page for freeCodeCamp responsive Web Design Projects</figcaption>
+                </figure>
+                <figure class="fig2">
+                  <a href="https://jef771.github.io/freeCodeCamp-survey-form/"><img src="survey-form.jpg"></a>
+                  <figcaption>Survey Form Page for freeCodeCamp responsive Web Design Projects</<figcaption>
+                </figure>
+              </div>
+              <div class="port3">
+                <figure class="fig1">
+                  <img src="documentation-page.jpg">
+                  <figcaption>Technical Documentation Page for freeCodeCamp responsive Web Design Projects</<figcaption>
+                </figure>
+                <figure class="fig2">
+                  <img src="assistente.jpg">
+                  <figcaption>Projeto Integrador FATEC SJC, uma Assistente Virtual de Viagens, responsável pelo layout</<figcaption>
+                </figure>
+              </div>
+            </div>
+        </project>
+    <div class="contato">
+    <footer id="contato">
+      <div class="footer">
+        <a id="profile-link" class="icon1" href="https://github.com/jef771" target="_blank"><img src="github.png"></a>
+        <a id="profile-link" class="icon2" href="https://www.linkedin.com/in/jeferson-tadeu-das-neves-a98343190/" target="_blank"><img src="linkedin.png"></a>"
       </div>
-    </body>
+    </footer>
+    </div>
+
+
+  </body>
   </html>
