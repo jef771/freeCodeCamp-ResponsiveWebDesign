@@ -1,65 +1,55 @@
-main body html {
+html body {
   margin: 0;
   height: 100%;
-  background: rgba(0,0,0,0.2);
-}
-
-.container1 {
-  background-color: rgba(0,0,0,0.2);
-  display: flex;
-  height: 150px;
-  align-items: center;
-  justify-content: center;
-}
-
-#title {
+  background: rgba(255, 0, 0, 0.6);
   font-family: arial;
-  color: rgba(255,0,0,0.5);
 }
 
-#img-div {
-  background-color: rgba(0,0,0,0.8);
+.container {
+  padding: 1em;
   display: grid;
-  grid-template-columns: auto;
-  grid-auto-rows: auto;
   align-items: center;
   justify-content: center;
-  height: auto;
-}
-
-#image {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-#img-caption {
-  font-family: arial;
   color: #fff;
-  font-size: 10px;
+  font-size: 18px;
+  text-align: center;
 }
 
-.container2 {
-  background-color: rgba(0,0,0,0.2);
+
+#survey-form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container3 {
-  width: 50%;
+.quote2 {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: auto;
+  padding: 3em;
+  border-radius: .3em;
+  background-color: #fff;
+  width: 500px;
+  height: auto;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
 }
 
-#tribute-info {
-  font-family: arial;
-  font-size: 15px;
+.quote2:hover {
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.6);
+}
+
+.dropbold {
   font-weight: bold;
 }
 
-#tribute-link {
-  text-decoration: none;
+.radiocontainer {
+  display: flex;
+}
+
+.checkcontainer {
+  display: grid;
+}
+
+.floatright {
+  float: right;
 }
